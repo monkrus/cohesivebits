@@ -1,0 +1,64 @@
+.navbar {
+  min-height: 80px;
+}
+.navbar-brand {
+  height: 80px;
+  padding: 30px 15px;
+}
+.navbar-toggle {
+  margin-top: 23px;
+  margin-bottom: 23px;
+}
+.navbar-nav {
+  margin: 0 -15px;
+}
+@media (min-width: 768px) {
+  .navbar-nav > li > a {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+.navbar-form {
+  margin-top: 23px;
+  margin-bottom: 23px;
+}
+.navbar-btn {
+  margin-top: 23px;
+  margin-bottom: 23px;
+  *.btn-sm {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  &.btn-xs {
+    margin-top: 29px;
+    margin-bottom: 29px;
+  }
+}
+.navbar-text {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.jumbotron {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  p {
+    margin-bottom: 0.5em;
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .jumbotron {
+    padding-top: 1.6em;
+    padding-bottom: 1.6em;
+    h1,
+    .h1 {
+      font-size: 42px;
+    }
+  }
+  .container .jumbotron,
+  .container-fluid .jumbotron {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+}

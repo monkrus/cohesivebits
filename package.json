@@ -1,0 +1,21 @@
+{
+  "name": "cohesivebits.com",
+  "description": "Brochure website for Cohesive Bits Inc.",
+  "version": "1.0.0",
+  "author": "",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "clean": "rm -rf build/*",
+    "build": "npm run build:html -s && npm run build:css && npm run build:images && npm run build:js",
+    "build:css": "node-sass src/scss --include-path node_modules/bourbon/app/assets/stylesheets --output build/css --output-style compressed --quiet",
+    "build:html": "cp -f src/*.html build/",
+    "build:images": "cp -rf src/images build/",
+    "build:js": "cp -rf src/js build/",
+    "watch": "node-sass --watch src/scss --recursive --include-path node_modules/bourbon/app/assets/stylesheets --output src/css"
+  },
+  "devDependencies": {
+    "bourbon": "^4.2.7",
+    "node-sass": "latest"
+  }
+}

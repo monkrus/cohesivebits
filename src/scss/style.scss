@@ -1,0 +1,173 @@
+@import "bootstrap-overrides";
+
+// Colours.
+$blue: #00b3ee;
+$dark-blue: darken($blue, 10%);
+$black: #000;
+$white: #fff;
+
+// Minimum site width.
+.container {
+  min-width: 480px;
+}
+
+@media(max-width:800px){
+    .container {
+	min-width: auto;
+	overflow-x: hidden;
+    }
+    .preface {
+	width: inherit !important;
+    }
+}
+
+// Offset body below fixed top navigation bar.
+body {
+  margin-top: 81px;
+}
+// Offset anchor links below fixed top navigation bar.
+a.anchor {
+  display: block;
+  position: relative;
+  top: -81px;
+  visibility: hidden;
+}
+
+// Page header.
+header {
+  .navbar {
+    background-color: #fff;
+  }
+  .navbar-brand {
+    font-size: 28px;
+    text-transform: lowercase;
+  }
+  .navbar-brand-blue {
+    color: $blue;
+  }
+  #logo {
+    margin-top: -15px;
+  }
+}
+
+// Equal height blocks inside row w/ flexbox.
+.row-equal-height {
+  display: flex;
+  flex-wrap: wrap;
+  & > div {
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+}
+
+// Section headings.
+h2 {
+  font-weight: bold;
+}
+hr {
+  border-color: #ccc;
+  width: 50%;
+}
+.preface {
+  margin: 1.5em auto;
+  text-align: center;
+  width: 66.667%;
+}
+
+// Section padding.
+.mission,
+.team,
+.projects,
+.mailing-list,
+.updates {
+  padding: 2em 0 3em;
+}
+
+// Mission statement.
+.mission {
+  background-color: #eee;
+}
+
+// Team section.
+.team {
+  .bio-wrapper {
+    height: 100%;
+    background-color: #eeeeee;
+    .bio {
+      color: #777;
+      padding: 1px 1.5em 1em;
+      h3 {
+        color: #353535;
+      }
+      a.btn-primary {
+        background-color: #777;
+        border: none;
+        &:hover {
+          background-color: $blue;
+          color: $white;
+        }
+      }
+    }
+  }
+  .jobs {
+    background-color: $blue;
+    color: $white;
+    margin: 1em 0;
+    padding: 1.5em 1.5em 1em;
+    a.btn-primary {
+      background-color: $dark-blue;
+      border: none;
+      &:hover {
+        background-color: $white;
+        color: $black;
+      }
+    }
+  }
+}
+
+// Social media icons.
+.social-icons {
+  font-size: 2em;
+  margin: 10px 0;
+  & a {
+    color: inherit;
+    padding: 0 0.25em;
+    &:hover {
+      color: $blue;
+    }
+  }
+  & > i {
+    padding: 0 0.25em;
+  }
+}
+
+// Projects section.
+.projects {
+  background-color: #777;
+  color: #eee;
+}
+
+// Newsletter sign-up section.
+.mailing-list {
+  background-color: #777;
+  color: #eee;
+  h2,
+  p {
+    text-align: center;
+  }
+  .form-horizontal .control-label {
+    text-align: left;
+    font-weight: normal;
+  }
+}
+
+// Page footer.
+footer {
+  background-color: #222;
+  color: #888;
+  padding: 3em 0 2em;
+  text-align: center;
+  .social-icons a {
+    color: #888;
+  }
+}
