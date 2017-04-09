@@ -7,6 +7,7 @@
   "private": true,
   "scripts": {
     "start": "node app",
+    "postinstall": "npm run watch",
     "clean": "rm -rf build/*",
     "build": "npm run build:html -s && npm run build:css && npm run build:images && npm run build:js",
     "build:css": "node-sass src/scss --include-path node_modules/bourbon/app/assets/stylesheets --output build/css --output-style compressed --quiet",
