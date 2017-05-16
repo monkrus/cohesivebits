@@ -144,6 +144,18 @@ hr {
       background-color: #fff;
       color: #000; }
 
+.team .projects {
+  background-color: #00b3ee;
+  color: #fff;
+  margin: 1em 0;
+  padding: 1.5em 1.5em 1em; }
+  .team .jobs a.btn-primary {
+    background-color: #008dbb;
+    border: none; }
+    .team .jobs a.btn-primary:hover {
+      background-color: #fff;
+      color: #000; }
+
 .social-icons {
   font-size: 2em;
   margin: 10px 0; }

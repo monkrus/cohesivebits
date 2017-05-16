@@ -123,6 +123,20 @@ hr {
       }
     }
   }
+  .projects {
+    background-color: $blue;
+    color: $white;
+    margin: 1em 0;
+    padding: 1.5em 1.5em 1em;
+    a.btn-primary {
+      background-color: $dark-blue;
+      border: none;
+      &:hover {
+        background-color: $white;
+        color: $black;
+      }
+    }
+  }
 }
 
 // Social media icons.
